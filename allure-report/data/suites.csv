@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","8272","Registration form","chromium","2025-12-17","passed","2025-12-17","","Registration.spec.js","",""
+"","3707","Login Validation","chromium","2025-12-19","passed","2025-12-19","","Pom.spec.js","",""
+"","19718","Add to cart validation","chromium","2025-12-19","passed","2025-12-19","","Pom.spec.js","",""
+"","30020","Cart page Validation","chromium","2025-12-18","broken","2025-12-18","","Pom.spec.js","",""

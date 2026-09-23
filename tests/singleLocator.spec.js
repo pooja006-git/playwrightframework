@@ -1,0 +1,12 @@
+const {test,expect} = require('@playwright/test')
+test("single element locator",async({page})=>{
+await page.goto("https://www.demoblaze.com/index.html")
+await page.locator("#login2").click()
+await page.locator("id=loginusername").fill("pavanol")
+await page.locator('//input[@id="loginpassword"]').fill("test@123")
+await page.locator('//button[@onclick="logIn()"]').click()
+//page.waitForSelector("//a[@id='logout2']")
+//const logout=await page.locator("//a[@id='logout2']")
+//await expect("//a[@id='logout2']").toBeVisible()
+await page.locator("//a[@id='logout2']").click()
+})
