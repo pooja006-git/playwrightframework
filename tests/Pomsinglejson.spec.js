@@ -1,4 +1,5 @@
 const {test,expect} = require("@playwright/test")
+
 import {LoginPage} from "../Pages/LoginPage"
 import {HomePage} from "../Pages/HomePage"
 import { CartPage} from "../Pages/CartPage"
@@ -10,6 +11,9 @@ import { CartPage} from "../Pages/CartPage"
 //const url="https://demoblaze.com/"
 //const username ="pavanol"
 //const password = "test@123"
+
+const username = process.env.TEST_USERNAME;
+const password = process.env.TEST_PASSWORD;
 let Page;
 let Login;
 test.beforeEach(async({browser})=>{
@@ -25,6 +29,8 @@ test.afterAll(async () => {
 test("Login Validation",async()=>{
      //const Login=new LoginPage(Page)
      await Login.goToLoginpage()
-     await Login.LoginPage(data.username,data.password)
+     await Login.LoginPage(username,password)
+     console.log("Username available:", !!process.env.TEST_USERNAME);
+     console.log("Password available:", !!process.env.TEST_PASSWORD);
      await Page.waitForTimeout(3000)
 })

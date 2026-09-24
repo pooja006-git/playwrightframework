@@ -2,7 +2,10 @@
   "name": "playwrightframework",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+
+    "test:login": "npx playwright test Pomsinglejson.spec.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -10,7 +13,8 @@
   "devDependencies": {
     "@playwright/test": "^1.57.0",
     "@types/node": "^24.9.1",
-    "allure-playwright": "^3.4.3"
+    "allure-playwright": "^3.4.3",
+    "dotenv": "^18.0.3"
   },
   "dependencies": {
     "D": "^1.0.0"
