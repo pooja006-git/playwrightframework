@@ -2,7 +2,7 @@ pipeline {
     agent any
     tools {
         nodejs 'node26'
-        allure 'allure'
+        Allure 'Allure'
     }
 
     options {
